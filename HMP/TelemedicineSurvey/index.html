@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>HMP Telemedicine Survey</title>
+
+<script src="index_files/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="index_files/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="index_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="index_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="index_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="index_files/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="index_files/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="index_files/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="index_files/navigation-1.1/tabsets.js"></script>
+<link href="index_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="index_files/highlightjs-9.12.0/highlight.js"></script>
+<script src="index_files/htmlwidgets-1.0/htmlwidgets.js"></script>
+<script src="index_files/proj4js-2.3.15/proj4.js"></script>
+<link href="index_files/highcharts-5.0.6/css/motion.css" rel="stylesheet" />
+<script src="index_files/highcharts-5.0.6/highstock.js"></script>
+<script src="index_files/highcharts-5.0.6/highcharts-3d.js"></script>
+<script src="index_files/highcharts-5.0.6/highcharts-more.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/annotations.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/broken-axis.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/data.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/drilldown.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/exporting.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/funnel.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/heatmap.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/map.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/no-data-to-display.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/offline-exporting.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/solid-gauge.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/treemap.js"></script>
+<script src="index_files/highcharts-5.0.6/plugins/annotations.js"></script>
+<script src="index_files/highcharts-5.0.6/plugins/draggable-legend.js"></script>
+<script src="index_files/highcharts-5.0.6/plugins/draggable-points.js"></script>
+<script src="index_files/highcharts-5.0.6/plugins/export-csv.js"></script>
+<script src="index_files/highcharts-5.0.6/plugins/grouped-categories.js"></script>
+<script src="index_files/highcharts-5.0.6/plugins/motion.js"></script>
+<script src="index_files/highcharts-5.0.6/plugins/pattern-fill-v2.js"></script>
+<script src="index_files/highcharts-5.0.6/plugins/tooltip-delay.js"></script>
+<script src="index_files/highcharts-5.0.6/custom/reset.js"></script>
+<script src="index_files/highcharts-5.0.6/custom/symbols-extra.js"></script>
+<script src="index_files/highcharts-5.0.6/custom/text-symbols.js"></script>
+<link href="index_files/fontawesome-4.5.0/font-awesome.min.css" rel="stylesheet" />
+<link href="index_files/htmlwdgtgrid-1/htmlwdgtgrid.css" rel="stylesheet" />
+<script src="index_files/highchart-binding-0.5.0/highchart.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">HMP Telemedicine Survey</h1>
+
+</div>
+
+
+<div id="survey-design" class="section level1">
+<h1>Survey Design</h1>
+<div id="objective" class="section level2">
+<h2>Objective</h2>
+<p>The objective of this survey was to determine what factors engender telemedicine advocacy, and to capture the willingness of the audience to act in favor of telemedicine</p>
+<p>Greater personal confidence in telemedicine <span class="math inline">\(\rightarrow\)</span> Greater propensity to act</p>
+<p>The questionnaire for this survey is located <a href="https://docs.google.com/document/d/1HWujlrR2tK31L23QKj5aebVIKHkR6vc1bTYypXzD2OA/edit">here</a>.</p>
+</div>
+<div id="distribution" class="section level2">
+<h2>Distribution</h2>
+<p>We created two different versions of this survey to distribute to our existing Mailchimp email list and more broadly to Facebook via advertising. The surveys were identical except for an email capture element included on the Facebook version of the survey.</p>
+<center>
+<strong>Total Completes = 963</strong>
+</center>
+<div id="email" class="section level3">
+<h3>Email</h3>
+<p>We conducted a pre-test of the survey, in which we served the survey to a random 10% sample of the email list (1,831 emails) and then to the rest of the list (16,535 emails)</p>
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Email
+</th>
+<th style="text-align:center;">
+Opens
+</th>
+<th style="text-align:center;">
+Clicks
+</th>
+<th style="text-align:center;">
+Starts
+</th>
+<th style="text-align:center;">
+Completions
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<b>10% Sample</b><br>(1,831 emails)
+</td>
+<td style="text-align:center;">
+355<br>(19.4%)
+</td>
+<td style="text-align:center;border-right:1px solid;">
+61<br>(3.3%)
+</td>
+<td style="text-align:center;">
+54
+</td>
+<td style="text-align:center;">
+43<br>(79.6%)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<b>90% Sample</b><br>(16,535 emails)
+</td>
+<td style="text-align:center;">
+3,578<br>(21.6%)
+</td>
+<td style="text-align:center;border-right:1px solid;">
+562<br>(3.4%)
+</td>
+<td style="text-align:center;">
+548
+</td>
+<td style="text-align:center;">
+439<br>(78.1%)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<b>Total</b><br>(18,366 emails)
+</td>
+<td style="text-align:center;">
+3,897<br>(21.4%
+</td>
+<td style="text-align:center;border-right:1px solid;">
+623<br>(3.4%)
+</td>
+<td style="text-align:center;">
+602
+</td>
+<td style="text-align:center;">
+482<br>(79.3%)
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="facebook" class="section level3">
+<h3>Facebook</h3>
+<p>For the Facebook version, we advertised the survey over six days, from February 2nd to February 6th. Out of 1,629 survey starts, we received 481 completions - which corresponds to a 29.5% completion rate.</p>
+<div id="htmlwidget-36d18e05502c0f7b64bc" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-36d18e05502c0f7b64bc">{"x":{"hc_opts":{"title":{"text":"Facebook Completes"},"yAxis":[{"title":{"text":null}},{"showLastLabel":false,"opposite":true,"title":{"text":null}}],"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0,"showInLegend":false,"marker":{"enabled":true}},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25},"scatter":{"marker":{"symbol":"circle"}}},"annotationsOptions":{"enabledButtons":false},"tooltip":{"delayForDisplay":10},"series":[{"group":"group","data":[{"Started.At":"2018-02-02","count":69,"c_count":71,"x":1517529600000,"y":69,"color":"#B3D4E8"},{"Started.At":"2018-02-03","count":78,"c_count":149,"x":1517616000000,"y":78,"color":"#79B2D5"},{"Started.At":"2018-02-04","count":89,"c_count":238,"x":1517702400000,"y":89,"color":"#3182BD"},{"Started.At":"2018-02-05","count":64,"c_count":302,"x":1517788800000,"y":64,"color":"#C8E0EF"},{"Started.At":"2018-02-06","count":84,"c_count":386,"x":1517875200000,"y":84,"color":"#559AC9"},{"Started.At":"2018-02-07","count":72,"c_count":458,"x":1517961600000,"y":72,"color":"#9ECAE1"},{"Started.At":"2018-02-08","count":23,"c_count":481,"x":1518048000000,"y":23,"color":"#DEEBF7"}],"type":"column","name":"Completed"},{"group":"group","data":[{"Started.At":"2018-02-02","count":69,"c_count":71,"x":1517529600000,"y":71,"color":"#FEE0D2"},{"Started.At":"2018-02-03","count":78,"c_count":149,"x":1517616000000,"y":149,"color":"#FDC6B2"},{"Started.At":"2018-02-04","count":89,"c_count":238,"x":1517702400000,"y":238,"color":"#FCAC92"},{"Started.At":"2018-02-05","count":64,"c_count":302,"x":1517788800000,"y":302,"color":"#FC9272"},{"Started.At":"2018-02-06","count":84,"c_count":386,"x":1517875200000,"y":386,"color":"#F27058"},{"Started.At":"2018-02-07","count":72,"c_count":458,"x":1517961600000,"y":458,"color":"#E84E3F"},{"Started.At":"2018-02-08","count":23,"c_count":481,"x":1518048000000,"y":481,"color":"#DE2D26"}],"type":"line","lineColor":"#FB6A4A","name":"Cumulative","yAxis":1}],"xAxis":{"type":"datetime","title":""}},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"style":{"fontFamily":"Roboto"}},"title":{"align":"left","style":{"fontFamily":"Roboto Condensed","fontWeight":"bold"}},"subtitle":{"align":"left","style":{"fontFamily":"Roboto Condensed"}},"legend":{"align":"right","verticalAlign":"bottom"},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"plotOptions":{"line":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"spline":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"area":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"areaspline":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}}}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Roboto","Roboto+Condensed"],"debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<div id="survey-results" class="section level1">
+<h1>Survey Results</h1>
+<p>The questions were coded as follows:</p>
+<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Variable
+</th>
+<th style="text-align:left;">
+Question
+</th>
+<th style="text-align:left;">
+Responses
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+UseTM
+</td>
+<td style="text-align:left;">
+To what degree do you agree or disagree with the statement, “If given the chance, I would use telemedicine services more often?”
+</td>
+<td style="text-align:left;">
+Strongly Disagree, Disagree, Neither Agree or Disagree, Agree, Strongly Agree
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Covered
+</td>
+<td style="text-align:left;">
+Do you believe telemedicine services should be covered by insurance?
+</td>
+<td style="text-align:left;">
+Yes, No
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Access
+</td>
+<td style="text-align:left;">
+Do you believe using telemedicine services can improve access to health care?
+</td>
+<td style="text-align:left;">
+Yes, No
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Quality
+</td>
+<td style="text-align:left;">
+For appropriate health care services, do you believe the quality of care received via telemedicine is higher than, similar to, or lower than the quality of care received in an in-person visit?
+</td>
+<td style="text-align:left;">
+Lower, Similar, Higher
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ContactLeg
+</td>
+<td style="text-align:left;">
+In the past year, have you contacted your legislators about an issue important to you?
+</td>
+<td style="text-align:left;">
+Yes, No
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<b>SupportLeg<b> </b></b>
+</td>
+<td style="text-align:left;">
+<b>How likely would you be to support a legislator if they endorse increased access to telemedicine services for all Pennsylvanians?</b>
+</td>
+<td style="text-align:left;">
+<b>Extremely Unlikely, Unlikely, Neutral, Likely, Extremely Likely</b>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The outcome of interest we are looking to gauge is the <strong>SupportLeg</strong> variable. Using all the other variables, we seek to predict the likelihood of a respondent supporting a legislator if they endorse increased access to telemedicine services for all Pennsylvanians.</p>
+<p>The graphs below show the distribution of each variable and the distribution of the <strong>SupportLeg</strong> variable.</p>
+<p><img src="index_files/figure-html/plots-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>There are distinct relationships between those that would opt toward using telemedicine services more often, those that believe that telemedicine services should be covered by insurance, those that believe using telemedicine services can improve access to health care, and the likelihood of supporting a legislator who endorses increased access to telemedicine services.</p>
+</div>
+<div id="modeling" class="section level1">
+<h1>Modeling</h1>
+<p>In order to parse out these relationships, a probabalistic model is employed, where <strong>SupportLeg</strong> is the output variable - the variable the model predicts - and the other five variables are inputs.</p>
+<p>The Random Forest algorithm samples the input variables from a dataset and builds multiple “random” decision trees, which it aggregates to create a decision tree that can accurately classify communities based on these variables. This algorithm also allows us to compare the effect of each input variable on the outcome, relative to all other variables.</p>
+<p><img src="index_files/figure-html/rf_graphs-1.png" width="3000" style="display: block; margin: auto;" /></p>
+<p>Below I create a model with smaller number of categories. I group together “Extremely Unlikely” and “Unlikely” as well as “Extremely Likely” and “Likely”:</p>
+<p><img src="index_files/figure-html/simple-1.png" width="3000" style="display: block; margin: auto;" /></p>
+<div id="htmlwidget-09cdeb358964cbcbecef" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-09cdeb358964cbcbecef">{"x":{"hc_opts":{"title":{"text":"Variable Importances"},"yAxis":{"title":{"text":"Importance (Marginal Accuracy)"},"type":"linear"},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0,"showInLegend":false,"marker":{"enabled":true}},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25},"scatter":{"marker":{"symbol":"circle"}}},"annotationsOptions":{"enabledButtons":false},"tooltip":{"delayForDisplay":10},"series":[{"group":"group","data":[{"Unlikely":0.239967215162823,"Neutral":0.181551299363212,"Likely":0.1063578063443,"MeanDecreaseAccuracy":0.14194411151034,"MeanDecreaseGini":96.7727673922111,"y":0.142,"color":"#08519C","name":"UseTM"},{"Unlikely":0.273555608846192,"Neutral":-0.0276202585603816,"Likely":0.0278052921820753,"MeanDecreaseAccuracy":0.0395314787675384,"MeanDecreaseGini":18.9006469543789,"y":0.04,"color":"#3182BD","name":"Covered"},{"Unlikely":0.186445581480734,"Neutral":0.0316386173577762,"Likely":-0.00230340536492984,"MeanDecreaseAccuracy":0.0280702062390308,"MeanDecreaseGini":24.1677370042231,"y":0.028,"color":"#6BAED6","name":"Access"},{"Unlikely":0.104351461572038,"Neutral":-0.00969947618506452,"Likely":0.0121973117323167,"MeanDecreaseAccuracy":0.0164288872261142,"MeanDecreaseGini":10.744348865606,"y":0.016,"color":"#BDD7E7","name":"Quality"},{"Unlikely":0.0256201751215236,"Neutral":0.0191852195854549,"Likely":0.00329982302645779,"MeanDecreaseAccuracy":0.0102482883089296,"MeanDecreaseGini":9.78367948028758,"y":0.01,"color":"#EFF3FF","name":"ContactLeg"}],"type":"bar","name":"Importance"}],"xAxis":{"type":"category","title":{"text":""}}},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"style":{"fontFamily":"Roboto"}},"title":{"align":"left","style":{"fontFamily":"Roboto Condensed","fontWeight":"bold"}},"subtitle":{"align":"left","style":{"fontFamily":"Roboto Condensed"}},"legend":{"align":"right","verticalAlign":"bottom"},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"plotOptions":{"line":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"spline":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"area":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"areaspline":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}}}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Roboto","Roboto+Condensed"],"debug":false},"evals":[],"jsHooks":[]}</script>
+<p>According to the model, the most predictive variables out of all those that we tested is <strong>UseTM</strong>, which measures the extent to which the respondent would opt for using telemedicine services more often. The mean increase in accuracy of the model in predicting <strong>SupportLeg</strong> is ten times greater for <strong>UseTM</strong> than any other variable.</p>
+<p>Using <strong>UseTM</strong>, We can accurately classify ~80% of respondents as either unlikely or likely to support a legislator who endorses increased access to telemedicine services.</p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
