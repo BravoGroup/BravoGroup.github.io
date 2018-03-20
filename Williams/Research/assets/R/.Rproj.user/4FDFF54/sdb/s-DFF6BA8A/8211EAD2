@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(twitteR)\nlibrary(xlsx)\nlibrary(stringr)\nlibrary(networkD3)\n\nsetwd(\"~/NB\")\n\nck <- \"UD0KeCr5ZfpMrd8mRbgebuQKY\"\ncs <- \"wsO0tGZ8pQwy4HL3LVI1nIKPXPjteoTsc4sfdOI8O95qRNqxLS\"\nat <- \"835139026432757761-04WPbVYpjw7aUKfUfXb0Whn2PRGJ9GS\"\nas <- \"Xm4A4qpk6oXQNtwuPEaLgLIBdI319BEnqYTHtEH2vhUht\"\n\n\ntoken <- setup_twitter_oauth(ck, cs, at, as)\n\ntweets <- searchTwitter(\"@EdVotersPA\", resultType = \"recent\", n = 200)\ntweets <- twListToDF(tweets)\n\nedges1 <- getEdges(tweets)\n\nsimpleNetwork(edges1, linkDistance = 100, charge = -400, zoom = TRUE, opacity = .6, fontSize = 12, fontFamily = \"sans-serif\")\n\n\n####remove nuclear option + SCOTUS####\ntw <- tweets[grep(\"nuclear option\", tweets$text, invert=T, ignore.case = T),]\ntw <- tw[grep(\"SCOTUS\", tw$text, ignore.case = T, invert=T),]\ntw <- tw[grep(\"Gorsuch\", tw$text, ignore.case = T, invert=T),]\ntw <- tw[grep(\"going nuclear\", tw$text, ignore.case = T, invert=T),]\ntw <- tw[grep(\"nuclear war\", tw$text, ignore.case = T, invert=T),]\ntw <- tw[grep(\"senate\", tw$text, ignore.case = T, invert=T),]\ntw <- tw[grep(\"GOP\", tw$text, ignore.case = T, invert=T),]\ntw <- tw[grep(\"North Korea\", tw$text, ignore.case = T, invert=T),]\ntw <- tw[grep(\"Russia\", tw$text, ignore.case = T, invert=T),]\ntw <- tw[grep(\"india\", tw$text, ignore.case = T, invert=T),]\ntw <- tw[grep(\"nuclear bomb\", tw$text, ignore.case = T, invert=T),]\ntw <- tw[grep(\"go nuclear\", tw$text, ignore.case = T, invert=T),]\ntw <- tw[grep(\"Obama\", tw$text, ignore.case = T, invert=T),]\ntw <- tw[grep(\"Trump\", tw$text, ignore.case = T, invert=T),]\ntw <- tw[grep(\"WH\", tw$text, ignore.case = F, invert=T),]\n\nwrite.xlsx(tw, file = \"tweets.xlsx\", sheetName = \"Tweets\", row.names = F)\n\ngetCurRateLimitInfo()\n\nurl_pattern <- \"http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\\\(\\\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+\"\ntw$URLs <- str_extract(tw$text, url_pattern)\n\n",
+    "created" : 1492013767648.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3344188755",
+    "id" : "8211EAD2",
+    "lastKnownWriteTime" : 1491592667,
+    "last_content_update" : 1491592667,
+    "path" : "~/NB/nucleartw.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

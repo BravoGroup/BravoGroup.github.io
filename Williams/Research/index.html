@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Williams Report</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body class="homepage">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header-wrapper">
+            <div id="header" class="container">
+
+                <!-- Logo -->
+                <h1 id="logo"><a href="http://bravogroup.us"><img src="images/bg_logo.png" alt="" /></a></h1>
+
+                <!-- Nav 
+							<nav id="nav">
+								<ul>
+									<li>
+										<a href="#">Dropdown</a>
+										<ul>
+											<li><a href="#">Lorem ipsum dolor</a></li>
+											<li><a href="#">Magna phasellus</a></li>
+											<li><a href="#">Etiam dolore nisl</a></li>
+											<li>
+												<a href="#">Phasellus consequat</a>
+												<ul>
+													<li><a href="#">Lorem ipsum dolor</a></li>
+													<li><a href="#">Phasellus consequat</a></li>
+													<li><a href="#">Magna phasellus</a></li>
+													<li><a href="#">Etiam dolore nisl</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Veroeros feugiat</a></li>
+										</ul>
+									</li>
+									<li><a href="left-sidebar.html">Left Sidebar</a></li>
+									<li class="break"><a href="right-sidebar.html">Right Sidebar</a></li>
+									<li><a href="no-sidebar.html">No Sidebar</a></li>
+								</ul>
+							</nav>-->
+
+            </div>
+
+            <!-- Hero -->
+            <section id="hero" class="container">
+                <header>
+                    <img src="images/logo.png" alt="" />
+                </header>
+                <p>Research Report</p>
+                <ul class="actions">
+                    <li><a class="button scroll-down">Start</a></li>
+                </ul>
+            </section>
+
+        </div>
+
+        <!-- Features 1 -->
+        <div class="wrapper" id="middle">
+            <div id="promo-wrapper">
+                <h2>Survey Questions</h2>
+                <section id="promo">
+                    <label for="Env_vs_Econ">Env. vs Econ:</label>
+                    <select id="Env_vs_Econ" class="filter"></select>
+                    <label for="County">County:</label>
+                    <select id="County" class="filter"></select>
+                    <label for="Education">Education:</label>
+                    <select id="Education" class="filter"></select>
+                    <br>
+                    <label for="Union">Union:</label>
+                    <select id="Union" class="filter"></select>
+                    <label for="Political_Party">Political Party:</label>
+                    <select id="Political_Party" class="filter"></select>
+                    <label for="sex">Sex:</label>
+                    <select id="sex" class="filter"></select>
+                    <label for="income">Income:</label>
+                    <select id="income" class="filter"></select>
+                    <br>
+                    <label>Dimension:</label>
+                    <select id="prop-select">
+                        <option value="jobs">Importance: Creates Jobs</option>
+                        <option value="paenergy">Importance: Uses PA Energy</option>
+                        <option value="indepsec">Importance: Energy Independence</option>
+                        <option value="ussteel">Importance: Uses U.S. Steel</option>
+                        <option value="cultural">Importance: Avoid Cultural Grounds</option>
+                        <option value="envt">Importance: Minimal Environment Impact</option>
+                        <option value="farmland">Importance: Mimimal Farmland Impact</option>
+                        <option value="safety">Importance: Highest Safety Standards</option>
+                        <option value="renewables">Importance: Complements Renewables</option>
+                        <option value="steeldemand">Dis/Agree: Demand for U.S. Steel too High</option>
+                        <option value="steelcapable">Dis/Agree: Limited Steel Capabilities</option>
+                        <option value="farmuse">Accurate: Farming Allowed</option>
+                        <option value="useexcept">Accurate: Land Use Exceptions</option>
+                        <option value="ageffect">Accurate: Minimize Agricultural Impact</option>
+                        <option value="farmvsag">Dis/Agree: Preserved Farmland Should be Eligible</option>
+                        <option value="asr_feel">Support/Oppose: ASR (Initial)</option>
+                        <option value="supp_cultural">Worked with FERC and PHMC</option>
+                        <option value="supp_archeo">Worked to Avoid Archaeological Sites</option>
+                        <option value="supp_NA">Worked to Avoid Burial Sites</option>
+                        <option value="asr_feel2">Support/Oppose: ASR (Post)</option>
+                        <option value="reliable_media">Most Credible Source</option>
+                        <option value="benefit">Most Important Cause</option>
+                    </select>
+                </section>
+            </div>
+        </div>
+
+        <!-- Features 2 -->
+        <div class="wrapper">
+            <button id="chart-type-toggle">Chart by %</button>
+            <div id="chart_div"></div>
+            <header class="major">
+                <section class="container">
+                    <h2>Most Important Considerations</h2>
+                    <div id="htmlwidget-ba6f9de2dde7c531059c" style="width:100%;height:600px;" class="plotly html-widget"></div>
+                    <script type="application/json" data-for="htmlwidget-ba6f9de2dde7c531059c">{"x":{"layout":{"margin":{"b":80,"l":120,"t":50,"r":10},"xaxis":{"domain":[0.15,1],"title":"","showgrid":false,"showline":false,"showticklabels":false,"zeroline":false,"ticksuffix":"%"},"yaxis":{"domain":[0,1],"title":"","showgrid":false,"showline":false,"showticklabels":false,"zeroline":false,"categoryorder":"array","categoryarray":["Promotes  PA Energy","Promotes Energy Independence & Security","Creates Jobs","Uses US Steel","Helps Complement & Support Renewables","Avoids Cultural Grounds","Minimizes Agricultural Impact","Minimizes Envrionmental Impact","Employs Highest Safety Standards"],"type":"category"},"barmode":"stack","showlegend":false,"annotations":[{"text":"Employs Highest Safety Standards","xref":"paper","yref":"y","x":0.14,"y":"Employs Highest Safety Standards","xanchor":"right","font":{"family":"Arial","size":12,"color":"rgb(67, 67, 67)"},"showarrow":false,"align":"right"},{"text":"Minimizes Envrionmental Impact","xref":"paper","yref":"y","x":0.14,"y":"Minimizes Envrionmental Impact","xanchor":"right","font":{"family":"Arial","size":12,"color":"rgb(67, 67, 67)"},"showarrow":false,"align":"right"},{"text":"Minimizes Agricultural Impact","xref":"paper","yref":"y","x":0.14,"y":"Minimizes Agricultural Impact","xanchor":"right","font":{"family":"Arial","size":12,"color":"rgb(67, 67, 67)"},"showarrow":false,"align":"right"},{"text":"Avoids Cultural Grounds","xref":"paper","yref":"y","x":0.14,"y":"Avoids Cultural Grounds","xanchor":"right","font":{"family":"Arial","size":12,"color":"rgb(67, 67, 67)"},"showarrow":false,"align":"right"},{"text":"Helps Complement & Support Renewables","xref":"paper","yref":"y","x":0.14,"y":"Helps Complement & Support Renewables","xanchor":"right","font":{"family":"Arial","size":12,"color":"rgb(67, 67, 67)"},"showarrow":false,"align":"right"},{"text":"Uses US Steel","xref":"paper","yref":"y","x":0.14,"y":"Uses US Steel","xanchor":"right","font":{"family":"Arial","size":12,"color":"rgb(67, 67, 67)"},"showarrow":false,"align":"right"},{"text":"Creates Jobs","xref":"paper","yref":"y","x":0.14,"y":"Creates Jobs","xanchor":"right","font":{"family":"Arial","size":12,"color":"rgb(67, 67, 67)"},"showarrow":false,"align":"right"},{"text":"Promotes Energy Independence & Security","xref":"paper","yref":"y","x":0.14,"y":"Promotes Energy Independence & Security","xanchor":"right","font":{"family":"Arial","size":12,"color":"rgb(67, 67, 67)"},"showarrow":false,"align":"right"},{"text":"Promotes  PA Energy","xref":"paper","yref":"y","x":0.14,"y":"Promotes  PA Energy","xanchor":"right","font":{"family":"Arial","size":12,"color":"rgb(67, 67, 67)"},"showarrow":false,"align":"right"},{"text":"Not at all Important","xref":"x","yref":"paper","x":5,"y":1.05,"font":{"family":"Arial","size":12},"showarrow":false},{"text":"Slightly Important","xref":"x","yref":"paper","x":20,"y":1.05,"font":{"family":"Arial","size":12},"showarrow":false},{"text":"Somewhat Important","xref":"x","yref":"paper","x":40,"y":1.05,"font":{"family":"Arial","size":12},"showarrow":false},{"text":"Very Important","xref":"x","yref":"paper","x":70,"y":1.05,"font":{"family":"Arial","size":12},"showarrow":false},{"text":"Extremely Important","xref":"x","yref":"paper","x":90,"y":1.05,"font":{"family":"Arial","size":12},"showarrow":false}]},"source":"A","config":{"modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"modeBarButtonsToRemove":["sendDataToCloud","sendDataToCloud"],"displayModeBar":false,"showLink":false,"displaylogo":false},"data":[{"x":[1.7,0.8,0.8,3.8,3.4,5.9,5.5,4.7,8.5],"y":["Employs Highest Safety Standards","Minimizes Envrionmental Impact","Minimizes Agricultural Impact","Avoids Cultural Grounds","Helps Complement & Support Renewables","Uses US Steel","Creates Jobs","Promotes Energy Independence & Security","Promotes  PA Energy"],"orientation":"h","marker":{"fillcolor":"rgba(31,119,180,1)","color":"#f1eef6","line":{"color":"rgb(248, 248, 249)","width":1,"name":"Not at all Important"}},"type":"bar","xaxis":"x","yaxis":"y"},{"x":[4.7,7.2,5.5,7.6,9.7,18.6,20.3,19.5,19.9],"y":["Employs Highest Safety Standards","Minimizes Envrionmental Impact","Minimizes Agricultural Impact","Avoids Cultural Grounds","Helps Complement & Support Renewables","Uses US Steel","Creates Jobs","Promotes Energy Independence & Security","Promotes  PA Energy"],"orientation":"h","marker":{"fillcolor":"rgba(255,127,14,1)","color":"#bdc9e1","line":{"color":"rgb(248, 248, 249)","width":1,"name":"Not at all Important"}},"type":"bar","name":"Slightly Important","xaxis":"x","yaxis":"y"},{"x":[10.2,14.4,20.8,25.4,22.9,30.5,24.6,32.2,28],"y":["Employs Highest Safety Standards","Minimizes Envrionmental Impact","Minimizes Agricultural Impact","Avoids Cultural Grounds","Helps Complement & Support Renewables","Uses US Steel","Creates Jobs","Promotes Energy Independence & Security","Promotes  PA Energy"],"orientation":"h","marker":{"fillcolor":"rgba(44,160,44,1)","color":"#74a9cf","line":{"color":"rgb(248, 248, 249)","width":1,"name":"Not at all Important"}},"type":"bar","name":"Somewhat Important","xaxis":"x","yaxis":"y"},{"x":[32.6,33.1,32.6,29.2,34.3,23.7,31.8,26.7,29.7],"y":["Employs Highest Safety Standards","Minimizes Envrionmental Impact","Minimizes Agricultural Impact","Avoids Cultural Grounds","Helps Complement & Support Renewables","Uses US Steel","Creates Jobs","Promotes Energy Independence & Security","Promotes  PA Energy"],"orientation":"h","marker":{"fillcolor":"rgba(214,39,40,1)","color":"#2b8cbe","line":{"color":"rgb(248, 248, 249)","width":1,"name":"Not at all Important"}},"type":"bar","name":"Very Important","xaxis":"x","yaxis":"y"},{"x":[50.8,44.5,40.3,33.9,29.7,21.2,17.8,16.9,14],"y":["Employs Highest Safety Standards","Minimizes Envrionmental Impact","Minimizes Agricultural Impact","Avoids Cultural Grounds","Helps Complement & Support Renewables","Uses US Steel","Creates Jobs","Promotes Energy Independence & Security","Promotes  PA Energy"],"orientation":"h","marker":{"fillcolor":"rgba(148,103,189,1)","color":"#045a8d","line":{"color":"rgb(248, 248, 249)","width":1,"name":"Not at all Important"}},"type":"bar","name":"Extremely Important","xaxis":"x","yaxis":"y"}],"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":[]}</script>
+                    <script type="application/htmlwidget-sizing" data-for="htmlwidget-ba6f9de2dde7c531059c">{"viewer":{"width":"100%","height":600,"padding":15,"fill":true},"browser":{"width":"100%","height":600,"padding":40,"fill":true}}</script>
+                    <h2>Message Testing</h2><br>
+                    <p>Testing to evaluate changes in support for ASR <span style="background-color:rgba(4, 90, 141, .3);color:#000">before</span> and <span style="background-color:rgba(4, 90, 141, 1);color:#FFF">after</span> receiving the following messages:</p>
+                    <ol style="width:50%;margin:auto;">
+                        <li style="margin: 0 0 1em 0;">Williams has worked closely with FERC and the Pennsylvania Historical and Museum Commission (PHMC) to identify and consult with recognized Native American tribes in the project area</li>
+                        <li style="margin: 0 0 1em 0;">The Atlantic Sunrise project has undergone significant changes to avoid significant prehistoric and archaeological sites and aboveground resources</li>
+                        <li style="margin: 0 0 1em 0;">Williams commits to avoid cemeteries of any age, ethnic affiliation or type</li>
+                    </ol>
+                     <div id="htmlwidget-19fa231daebef66062f5" style="width:80%;height:600px;margin:auto;" class="plotly html-widget"></div>
+                    <script type="application/json" data-for="htmlwidget-19fa231daebef66062f5">{"x":{"data":[{"x":["Strongly<br>Disagree","Somewhat<br>Disagree","Slightly<br>Disagree","No<br>Opinion","Slightly<br>Agree","Somewhat<br>Agree","Strongly<br>Agree"],"y":[7.2,8.9,13.6,18.2,25.4,16.9,9.7],"marker":{"fillcolor":"rgba(31,119,180,1)","color":"#6BAED6","line":{"color":"transparent"}},"name":"Before","type":"bar","xaxis":"x","yaxis":"y"},{"x":["Strongly<br>Disagree","Somewhat<br>Disagree","Slightly<br>Disagree","No<br>Opinion","Slightly<br>Agree","Somewhat<br>Agree","Strongly<br>Agree"],"y":[7.2,7.2,9.3,17.4,20.8,23.3,14.8],"marker":{"fillcolor":"rgba(255,127,14,1)","color":"#2171B5","line":{"color":"transparent"}},"name":"After","type":"bar","xaxis":"x","yaxis":"y"},{"x":["Decreases<br>Support","Increases<br>Support","No Change<br>in Support"],"y":[5.5,58.1,36.4],"marker":{"fillcolor":"rgba(31,119,180,1)","color":"#2171B5","line":{"color":"transparent"}},"name":"Cultural","type":"bar","xaxis":"x2","yaxis":"y4"},{"x":["Decreases<br>Support","Increases<br>Support","No Change<br>in Support"],"y":[7.6,59.7,32.6],"marker":{"fillcolor":"rgba(31,119,180,1)","color":"#2171B5","line":{"color":"transparent"}},"name":"Archeological","type":"bar","xaxis":"x3","yaxis":"y3"},{"x":["Decreases<br>Support","Increases<br>Support","No Change<br>in Support"],"y":[3,62.7,34.3],"marker":{"fillcolor":"rgba(31,119,180,1)","color":"#2171B5","line":{"color":"transparent"}},"name":"Burial","type":"bar","xaxis":"x4","yaxis":"y2"}],"layout":{"xaxis":{"domain":[0,1],"showgrid":false,"showline":false,"type":"category","categoryorder":"array","categoryarray":["Strongly<br>Disagree","Somewhat<br>Disagree","Slightly<br>Disagree","No<br>Opinion","Slightly<br>Agree","Somewhat<br>Agree","Strongly<br>Agree"],"anchor":"y"},"xaxis2":{"domain":[0.047,0.313333333333333],"showgrid":false,"showline":false,"type":"category","categoryorder":"array","categoryarray":["Decreases<br>Support","Increases<br>Support","No Change<br>in Support"],"anchor":"y4"},"xaxis3":{"domain":[0.397333333333333,0.646666666666667],"showgrid":false,"showline":false,"type":"category","categoryorder":"array","categoryarray":["Decreases<br>Support","Increases<br>Support","No Change<br>in Support"],"anchor":"y3"},"xaxis4":{"domain":[0.733666666666667,1],"showgrid":false,"showline":false,"type":"category","categoryorder":"array","categoryarray":["Decreases<br>Support","Increases<br>Support","No Change<br>in Support"],"anchor":"y2"},"yaxis2":{"domain":[0,0.42],"ticksuffix":"%","anchor":"x4"},"yaxis3":{"domain":[0,0.42],"ticksuffix":"%","anchor":"x3"},"yaxis4":{"domain":[0,0.42],"ticksuffix":"%","anchor":"x2"},"yaxis":{"domain":[0.58,1],"ticksuffix":"%","anchor":"x"},"annotations":[{"x":0.5,"y":1.021,"text":"Support for ASR","showarrow":false,"xref":"paper","yref":"paper"},{"x":0.08,"y":0.441,"text":"Worked with FERC and PHMC","showarrow":false,"xref":"paper","yref":"paper"},{"x":0.5,"y":0.441,"text":"Coordinated with all Stakeholders","showarrow":false,"xref":"paper","yref":"paper"},{"x":0.95,"y":0.441,"text":"Avoided Burial Sites","showarrow":false,"xref":"paper","yref":"paper"}],"margin":{"b":40,"l":60,"t":25,"r":10},"showlegend":false},"config":{"modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"modeBarButtonsToRemove":["sendDataToCloud"],"displayModeBar":false,"showLink":false,"displaylogo":false},"source":"A","subplot":true,"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":[]}</script>
+                    <script type="application/htmlwidget-sizing" data-for="htmlwidget-19fa231daebef66062f5">{"viewer":{"width":"80%","height":600,"padding":15,"fill":true},"browser":{"width":"80%","height":600,"padding":40,"fill":true}}</script>
+                    <br>
+                    <h2>Respondent Demographics</h2>
+                    <br>
+                    <div style="width:50%;display:block;float:left;">
+                      <div id="htmlwidget-bef9e33db4972a2e4ae4" style="width:100%;height:400px;" class="plotly html-widget"></div>
+                      <script type="application/json" data-for="htmlwidget-bef9e33db4972a2e4ae4">{"x":{"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Respondent Age","showlegend":false,"xaxis":{"domain":[0,1],"title":"","type":"category","categoryorder":"array","categoryarray":["18-24","25-34","35-44","45-54","55-64","65 or older"]},"yaxis":{"domain":[0,1],"title":"","ticksuffix":"%"}},"source":"A","config":{"modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"modeBarButtonsToRemove":["sendDataToCloud","sendDataToCloud"],"displayModeBar":false,"showLink":false,"displaylogo":false},"data":[{"x":["18-24","25-34","35-44","45-54","55-64","65 or older"],"y":[17.8,30.5,21.6,7.2,13.6,9.3],"marker":{"fillcolor":"rgba(31,119,180,1)","color":"rgba(31,119,180,1)","colors":"rgba(4, 90, 141, .9)","line":{"color":"transparent"}},"type":"bar","xaxis":"x","yaxis":"y"}],"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":[]}</script>
+                    </div>
+                    <div style="width:50%;display:block;float:left;">
+                      <div id="htmlwidget-98c8fc5566c10468e8f8" style="width:100%;height:400px;" class="plotly html-widget"></div>
+                      <script type="application/json" data-for="htmlwidget-98c8fc5566c10468e8f8">{"x":{"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Respondent Sex","showlegend":false,"xaxis":{"domain":[0,1],"showgrid":false,"zeroline":false,"showticklabels":false},"yaxis":{"domain":[0,1],"showgrid":false,"zeroline":false,"showticklabels":false}},"source":"A","config":{"modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"modeBarButtonsToRemove":["sendDataToCloud","sendDataToCloud"],"displayModeBar":false,"showLink":false,"displaylogo":false},"data":[{"labels":["Female","Male"],"values":[124,112],"marker":{"fillcolor":"rgba(31,119,180,1)","color":"rgba(31,119,180,1)","colors":["#2171B5","#6BAED6"],"line":{"color":"#FFFFFF","width":1}},"textposition":"inside","insidetextfont":{"color":"#FFFFFF"},"type":"pie","hole":0.5}],"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":[]}</script>
+                    </div>
+                    <div style="width:50%;display:block;float:left;">
+                      <div id="htmlwidget-beefdcc4e5d3203bbcfb" style="width:100%;height:400px;" class="plotly html-widget"></div>
+                      <script type="application/json" data-for="htmlwidget-beefdcc4e5d3203bbcfb">{"x":{"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Respondent Race","showlegend":true,"xaxis":{"domain":[0,1],"showgrid":false,"zeroline":false,"showticklabels":false},"yaxis":{"domain":[0,1],"showgrid":false,"zeroline":false,"showticklabels":false}},"source":"A","config":{"modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"modeBarButtonsToRemove":["sendDataToCloud","sendDataToCloud"],"displayModeBar":false,"showLink":false,"displaylogo":false},"data":[{"labels":["African-American or Black","Asian or Pacific Islander","Caucasian or White","Hispanic or Latino","Native American or American Indian","Other","Other","Other","Other","Other","Other","Other"],"values":[4,6,204,13,2,1,1,1,1,1,1,1],"textposition":"inside","insidetextfont":{"color":"#FFFFFF"},"marker":{"fillcolor":"rgba(31,119,180,1)","color":"rgba(31,119,180,1)","colors":["#9ECAE1","#6BAED6","#2171B5","#4292C6","#C6DBEF","#EFF3FF"],"line":{"color":"#FFFFFF","width":1}},"type":"pie","hole":0.5}],"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":[]}</script>
+                    </div>
+                    <div style="width:50%;display:block;float:left;">
+                      <div id="htmlwidget-381e25eaa10b9ea79fb8" style="width:100%;height:400px;" class="plotly html-widget"></div>
+                      <script type="application/json" data-for="htmlwidget-381e25eaa10b9ea79fb8">{"x":{"layout":{"margin":{"b":80,"l":60,"t":25,"r":10},"title":"Respondent Political Views","showlegend":false,"xaxis":{"domain":[0,1],"title":"","categoryorder":"array","categoryarray":["Very<br>liberal","Somewhat<br>liberal","Moderate","Somewhat<br>conservative","Very<br>conservative"],"type":"category"},"yaxis":{"domain":[0,1],"title":"","ticksuffix":"%"},"font":{"family":"Arial","size":12}},"source":"A","config":{"modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"modeBarButtonsToRemove":["sendDataToCloud","sendDataToCloud"],"displayModeBar":false,"showLink":false,"displaylogo":false},"data":[{"x":["Moderate","Somewhat<br>conservative","Somewhat<br>liberal","Very<br>conservative","Very<br>liberal"],"y":[39,22,16.9,11.4,10.6],"marker":{"fillcolor":"rgba(31,119,180,1)","color":"rgba(31,119,180,1)","colors":"rgba(4, 90, 141, .9)","line":{"color":"transparent"}},"type":"bar","xaxis":"x","yaxis":"y"}],"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":[]}</script>
+                    </div>
+            </header>
+
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer-wrapper">
+
+                <div id="copyright" class="container">
+                <ul class="menu">
+                    <li>&copy; BravoGroup, Inc. All rights reserved.</li>
+                </ul>
+            </div>
+                <div class="row">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.scroll-down').click(function () {
+                $('html, body').animate({
+                    scrollTop: $('div#middle').offset().top
+                }, 'slow');
+                return false;
+            });
+        });
+    </script>
+    <script type="text/javascript" src="assets/js/data.js"></script>
+    <script type="text/javascript" src="assets/js/charts.js"></script>
+    <script type="text/javascript" src="assets/js/htmlwidgets.js"></script>
+    <script type="text/javascript" src="assets/js/plotly-latest.min.js"></script>
+    <script type="text/javascript" src="assets/js/plotly.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(twitteR)\nlibrary(stringr)\nlibrary(networkD3)\nlibrary(graphTweets)\nlibrary(htmlwidgets)\nlibrary(dplyr)\nlibrary(RKlout)\n\nck <- \"UD0KeCr5ZfpMrd8mRbgebuQKY\"\ncs <- \"wsO0tGZ8pQwy4HL3LVI1nIKPXPjteoTsc4sfdOI8O95qRNqxLS\"\nat <- \"835139026432757761-04WPbVYpjw7aUKfUfXb0Whn2PRGJ9GS\"\nas <- \"Xm4A4qpk6oXQNtwuPEaLgLIBdI319BEnqYTHtEH2vhUht\"\n\nrk <- \"8h3kqwy8c29eqwmgxhsnxeku\"\n\ntoken <- setup_twitter_oauth(ck, cs, at, as)\n\ngetCurRateLimitInfo()\n\nt <- userTimeline(\"SXLupdates\", n=3200, includeRts=T, excludeReplies=F)\nt <- twListToDF(t)\n\n####Natural Gas Keyword####\nnatgas1 <- searchTwitter(\"#natgas\", n=200, geocode='40.905210,-79.202637,80mi')\nnatgas2 <- searchTwitter(\"#natgas\", n=200, geocode='40.622292,-76.335205,80mi')\nnatgas1 <- twListToDF(natgas1)\nnatgas2 <- twListToDF(natgas2)\nnatgas <- rbind(natgas1,natgas2)\n\nedges1 <- getEdges(natgas, tweets = \"text\", source=\"screenName\", str.length = NULL,\"retweetCount\", \"text\")\nnodes1 <- getNodes(edges1, source = \"source\", target = \"target\",\"retweetCount\", \"text\")\n\n#Create edge values and node groups\nedges1$value <- 1\nnodes1$group <- 1\nnodes1$retweetCount[is.na(nodes1$retweetCount)] <- 1\nnodes1$text[is.na(nodes1$text)] <- 0\n\nfor(i in 2:length(nodes1$nodes)){\n  if (nodes1$klout2[i] <= 30){nodes1$group[i] = 1}\n  if (nodes1$klout2[i] > 10 & nodes1$klout2[i] <= 20){nodes1$group[i] = 2}\n  if (nodes1$klout2[i] > 20 & nodes1$klout2[i] <= 30){nodes1$group[i] = 3}\n  if (nodes1$klout2[i] > 30 & nodes1$klout2[i] <= 40){nodes1$group[i] = 4}\n  if (nodes1$klout2[i] > 40){nodes1$group[i] = 5}\n}\n\n#Create Index and Bring to Front\nnodes1$name <- 0:(length(nodes1$nodes)-1)\nnodes1 <- nodes1 %>% select(name,nodes,everything())\n\nnodes1$klout <- 0\nfor(i in 1:length(nodes1$nodes)){\n  nodes1$klout[i] <- RKlout(rk,nodes1$nodes[i])\n}\n\n\n#LOOKUP TABLE TO CONVERT MATCHING NAMES TO INDEX NUMBERS\nedges1$source <- (nodes1$name[match(edges1$source, nodes1$nodes)])\nedges1$target <- (nodes1$name[match(edges1$target, nodes1$nodes)])\n\nclick <- 'alert(d.text);'\n\nnatgas <- forceNetwork(Links = edges1, Nodes = nodes1, Source = \"source\",\n                   Target = \"target\", Value = \"value\", NodeID = \"nodes\", Group = \"group\", Nodesize = \"retweetCount\",\n                   fontSize = 12, fontFamily = \"sans-serif\", opacityNoHover = 1, zoom = T, clickAction = click)\n\nnatgas\n\nsaveWidget(natgas, file = \"natgas.html\", selfcontained = F)\n\n####Energy Keyword####\nenergy <- searchTwitter(\"#energy\", n=200)\nenergy1 <- searchTwitter(\"#energy\", n=200, geocode='40.905210,-79.202637,80mi')\nenergy2 <- searchTwitter(\"#energy\", n=200, geocode='40.622292,-76.335205,80mi')\nenergy1 <- twListToDF(energy1)\nenergy2 <- twListToDF(energy2)\nenergy <- rbind(energy1,energy2)\n\nedges2 <- getEdges(energy, tweets = \"text\", source=\"screenName\")\nenergy <- simpleNetwork(edges2, linkDistance = 100, charge = -400, zoom = TRUE, opacity = .6, fontSize = 12, fontFamily = \"sans-serif\")\nsaveWidget(natgas, file = \"energy.html\", selfcontained = F)\n\n\n\n\nmftg <- searchTwitter(\"#mftg\", n=200)\n\nMadeInUSA <- searchTwitter(\"#MadeInUSA\", n=200)\n\nSTEM <- searchTwitter(\"#STEM\", n=200)\n\npipeline <- searchTwitter(\"#pipeline\", n=200)\n\nTimeToBuild <- searchTwitter(\"#TimeToBuild\", n=200)\n\n\n\n\n\n\ngrep(\"#\\\\S+\", tweets$text, value = T)\nstr_detect(tweets$text, \"#\\\\S+\")\n\nl <- str_extract_all(tweets$text, \"#\\\\S+\")\n\nbind_rows(lapply(l, as.data.frame.list, stringsAsFactors=FALSE))\n\ndf <- data.frame(matrix(unlist(l), nrow=200, ncol = 3, byrow=T))\n\ndo.call(rbind.data.frame, l)\n\n\n",
+    "created" : 1492090083858.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3769522678",
+    "id" : "4D7C5054",
+    "lastKnownWriteTime" : 1492116227,
+    "last_content_update" : 1492116227,
+    "path" : "~/SNA-genentech/hashtag analysis.R",
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
