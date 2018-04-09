@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Podcast Survey Resuts</title>
+
+<script src="index_files/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="index_files/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="index_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="index_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="index_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="index_files/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="index_files/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="index_files/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="index_files/navigation-1.1/tabsets.js"></script>
+<link href="index_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="index_files/highlightjs-9.12.0/highlight.js"></script>
+<script src="index_files/htmlwidgets-1.0/htmlwidgets.js"></script>
+<script src="index_files/proj4js-2.3.15/proj4.js"></script>
+<link href="index_files/highcharts-5.0.6/css/motion.css" rel="stylesheet" />
+<script src="index_files/highcharts-5.0.6/highstock.js"></script>
+<script src="index_files/highcharts-5.0.6/highcharts-3d.js"></script>
+<script src="index_files/highcharts-5.0.6/highcharts-more.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/annotations.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/broken-axis.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/data.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/drilldown.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/exporting.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/funnel.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/heatmap.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/map.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/no-data-to-display.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/offline-exporting.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/solid-gauge.js"></script>
+<script src="index_files/highcharts-5.0.6/modules/treemap.js"></script>
+<script src="index_files/highcharts-5.0.6/plugins/annotations.js"></script>
+<script src="index_files/highcharts-5.0.6/plugins/draggable-legend.js"></script>
+<script src="index_files/highcharts-5.0.6/plugins/draggable-points.js"></script>
+<script src="index_files/highcharts-5.0.6/plugins/export-csv.js"></script>
+<script src="index_files/highcharts-5.0.6/plugins/grouped-categories.js"></script>
+<script src="index_files/highcharts-5.0.6/plugins/motion.js"></script>
+<script src="index_files/highcharts-5.0.6/plugins/pattern-fill-v2.js"></script>
+<script src="index_files/highcharts-5.0.6/plugins/tooltip-delay.js"></script>
+<script src="index_files/highcharts-5.0.6/custom/reset.js"></script>
+<script src="index_files/highcharts-5.0.6/custom/symbols-extra.js"></script>
+<script src="index_files/highcharts-5.0.6/custom/text-symbols.js"></script>
+<link href="index_files/fontawesome-4.5.0/font-awesome.min.css" rel="stylesheet" />
+<link href="index_files/htmlwdgtgrid-1/htmlwdgtgrid.css" rel="stylesheet" />
+<script src="index_files/highchart-binding-0.5.0/highchart.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">HMP Podcast Survey Resuts</h1>
+
+</div>
+
+<div id="survey-design" class="section level1">
+<h1>Survey Design</h1>
+<div id="objective" class="section level2">
+<h2>Objective</h2>
+<p>The objective of this survey was to get community feedback in order to inform the content direction of the Healthy Me PA podcast. Survey participants were invited to express their interest on a variety of proposed topics ranging from health policy to reviews on health and fitness trends.</p>
+</div>
+<div id="distribution" class="section level2">
+<h2>Distribution</h2>
+<p>We created two different versions of this survey to distribute to our existing Mailchimp email list and more broadly to Facebook and Twitter via advertising.</p>
+<center>
+<strong>Total Completes = 155</strong>
+</center>
+</div>
+<div id="survey-results" class="section level2">
+<h2>Survey Results</h2>
+<div id="podcast-listeners" class="section level3">
+<h3>Podcast Listeners</h3>
+<p>Q1: Do you listen to podcasts?</p>
+<div id="htmlwidget-b642c507ce2268275d59" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b642c507ce2268275d59">{"x":{"hc_opts":{"title":{"text":"Q1: Do you listen to podcasts?"},"yAxis":{"title":{"text":null}},"credits":{"enabled":true,"text":"n = 155","style":{"fontSize":"12px"}},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25}},"annotationsOptions":{"enabledButtons":false},"tooltip":{"delayForDisplay":10},"xAxis":{"type":"category"},"series":[{"data":[{"name":"Yes","y":90},{"name":"No","y":65}],"type":"bar","showInLegend":false,"name":"Q1","color":"#007bc4"}]},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"style":{"fontFamily":"Roboto"}},"title":{"align":"left","style":{"fontFamily":"Roboto Condensed","fontWeight":"bold"}},"subtitle":{"align":"left","style":{"fontFamily":"Roboto Condensed"}},"legend":{"align":"right","verticalAlign":"bottom"},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"plotOptions":{"line":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"spline":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"area":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"areaspline":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}}}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Roboto","Roboto+Condensed"],"debug":false},"evals":[],"jsHooks":[]}</script>
+<p>Those who answered “No” to question 1 were asked a follow up question, “Would you listen to a podcast produced by Healthy Me PA?”. All 65 respondents answered “Yes”.</p>
+</div>
+<div id="show-descriptions" class="section level3">
+<h3>Show Descriptions</h3>
+<p>Next, we tested five different types of podcast shows. Below are descriptions of each.</p>
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Show
+</th>
+<th style="text-align:left;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;font-weight: bold;border-right:1px solid;">
+Medical Miracles &amp; Unsolved Medical Mysteries
+</td>
+<td style="text-align:left;">
+We see them in the news and online, but how much do we really know about the incredible breakthroughs and unsolved mysteries that have happened in the medical community? Our hosts break down one per episode.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;border-right:1px solid;">
+Health Policy for Dummies
+</td>
+<td style="text-align:left;">
+Let’s face it: we’re not all experts in health policy. We take an in-depth look at health policy hot topics and demystify them for the average Joe.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;border-right:1px solid;">
+Grocery Store Hacks
+</td>
+<td style="text-align:left;">
+How to make smart choices for your body and your wallet. File it under the topics they should teach in school!
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;border-right:1px solid;">
+Mom Hacks
+</td>
+<td style="text-align:left;">
+Local moms discuss health tips for kids, how to manage everyday challenges and tips for doing it all and keeping it healthy!
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;border-right:1px solid;">
+Reviews You Can Use
+</td>
+<td style="text-align:left;">
+Kombucha, meditation, activity tracking apps - we try the latest health and fitness trends and give you our honest take on if it’s worth the hype.
+</td>
+</tr>
+</tbody>
+</table>
+<p>We asked respondents to rate how likely they were to tune into each show on a scale of “Not at all likely” to “Extremely likely”.</p>
+<p>Below is a summary of all those that were either “Very likely” or “Extremely likely” to listen to each show.</p>
+<div id="htmlwidget-692d3261b07c5dfd5ba6" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-692d3261b07c5dfd5ba6">{"x":{"hc_opts":{"title":{"text":"Shows Respondents 'Very' or 'Extremely' Likely to Tune Into"},"yAxis":{"title":{"text":"Count"},"type":"linear"},"credits":{"enabled":true,"text":"n(each) = 155","style":{"fontSize":"12px"}},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0,"showInLegend":false,"marker":{"enabled":true}},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25},"scatter":{"marker":{"symbol":"circle"}}},"annotationsOptions":{"enabledButtons":false},"tooltip":{"delayForDisplay":10},"series":[{"group":"group","data":[{"Show":"Medical Mysteries","Count":82,"y":82,"name":"Medical Mysteries"},{"Show":"Health Policy","Count":77,"y":77,"name":"Health Policy"},{"Show":"Grocery Hacks","Count":91,"y":91,"name":"Grocery Hacks"},{"Show":"Mom Hacks","Count":31,"y":31,"name":"Mom Hacks"},{"Show":"Reviews","Count":90,"y":90,"name":"Reviews"}],"type":"column","showInLegend":false,"name":"Count","color":"#007bc4"}],"xAxis":{"type":"category","title":{"text":"Show"},"categories":null}},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"style":{"fontFamily":"Roboto"}},"title":{"align":"left","style":{"fontFamily":"Roboto Condensed","fontWeight":"bold"}},"subtitle":{"align":"left","style":{"fontFamily":"Roboto Condensed"}},"legend":{"align":"right","verticalAlign":"bottom"},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"plotOptions":{"line":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"spline":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"area":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"areaspline":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}}}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Roboto","Roboto+Condensed"],"debug":false},"evals":[],"jsHooks":[]}</script>
+<p>Comparatively, the shows that responds are ‘Very’ or ‘Extremely’ to tune into are:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Grocery Hacks</strong><br />
+</li>
+<li><strong>Reviews</strong><br />
+</li>
+<li><strong>Medical Mysteries</strong><br />
+</li>
+<li><strong>Health Policy</strong><br />
+</li>
+<li><strong>Mom Hacks</strong></li>
+</ol>
+<p>Respondents were then asked directly which show they would rather tune into out of the five presented:</p>
+<div id="htmlwidget-1a8925a9622e8ebd190f" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1a8925a9622e8ebd190f">{"x":{"hc_opts":{"title":{"text":"Choose the Show You're Most Likey to Tune Into"},"yAxis":{"title":{"text":null}},"credits":{"enabled":true,"text":"n = 155","style":{"fontSize":"12px"}},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25}},"annotationsOptions":{"enabledButtons":false},"tooltip":{"delayForDisplay":10},"xAxis":{"type":"category"},"series":[{"data":[{"name":"Grocery Hacks","y":36},{"name":"Health Policy","y":23},{"name":"Medical Mysteries","y":37},{"name":"Mom Hacks","y":6},{"name":"Reviews","y":53}],"type":"column","showInLegend":false,"name":"Count","color":"#007bc4"}]},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"style":{"fontFamily":"Roboto"}},"title":{"align":"left","style":{"fontFamily":"Roboto Condensed","fontWeight":"bold"}},"subtitle":{"align":"left","style":{"fontFamily":"Roboto Condensed"}},"legend":{"align":"right","verticalAlign":"bottom"},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"plotOptions":{"line":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"spline":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"area":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"areaspline":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}}}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Roboto","Roboto+Condensed"],"debug":false},"evals":[],"jsHooks":[]}</script>
+<p>In order of likelihood, the shows that responds would want to tune into are:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Reviews</strong><br />
+</li>
+<li><strong>Medical Mysteries</strong><br />
+</li>
+<li><strong>Grocery Hacks</strong><br />
+</li>
+<li><strong>Health Policy</strong><br />
+</li>
+<li><strong>Mom Hacks</strong></li>
+</ol>
+<p>As a follow up, respondents were also asked about their second choice of show that they would tune into.</p>
+<div id="htmlwidget-d030c787167cb89991ba" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d030c787167cb89991ba">{"x":{"hc_opts":{"title":{"text":"Which Show is your Second Choice?"},"yAxis":{"title":{"text":null}},"credits":{"enabled":true,"text":"n = 155","style":{"fontSize":"12px"}},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25}},"annotationsOptions":{"enabledButtons":false},"tooltip":{"delayForDisplay":10},"xAxis":{"type":"category"},"series":[{"data":[{"name":"Grocery Hacks","y":33},{"name":"Health Policy","y":39},{"name":"Medical Mysteries","y":28},{"name":"Mom Hacks","y":8},{"name":"None of These","y":8},{"name":"Reviews","y":39}],"type":"column","showInLegend":false,"name":"Count","color":"#007bc4"}]},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"style":{"fontFamily":"Roboto"}},"title":{"align":"left","style":{"fontFamily":"Roboto Condensed","fontWeight":"bold"}},"subtitle":{"align":"left","style":{"fontFamily":"Roboto Condensed"}},"legend":{"align":"right","verticalAlign":"bottom"},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"plotOptions":{"line":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"spline":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"area":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"areaspline":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}}}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Roboto","Roboto+Condensed"],"debug":false},"evals":[],"jsHooks":[]}</script>
+<p>As for a second choice of show, respondents preferred the following:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Reviews</strong><br />
+</li>
+<li><strong>Health Policy</strong><br />
+</li>
+<li><strong>Grocery Hacks</strong><br />
+</li>
+<li><strong>Medical Mysteries</strong><br />
+</li>
+<li><strong>Mom Hacks</strong><br />
+</li>
+<li><strong>None of These</strong></li>
+</ol>
+</div>
+<div id="additional-questions" class="section level3">
+<h3>Additional Questions</h3>
+<p>We also asked the following questions:</p>
+<div id="htmlwidget-2f34b626e5d2137327b2" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2f34b626e5d2137327b2">{"x":{"hc_opts":{"title":{"text":"When are you Most Likely to Listen to Podcasts?"},"yAxis":{"title":{"text":""},"type":"linear"},"credits":{"enabled":false},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0,"showInLegend":false,"marker":{"enabled":true}},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25},"scatter":{"marker":{"symbol":"circle"}}},"annotationsOptions":{"enabledButtons":false},"tooltip":{"delayForDisplay":10},"series":[{"group":"group","data":[{"Locale":"During my work commute","Count":32,"y":32,"name":"During my work commute"},{"Locale":"Cleaning my house","Count":35,"y":35,"name":"Cleaning my house"},{"Locale":"Running errands","Count":26,"y":26,"name":"Running errands"},{"Locale":"At work","Count":14,"y":14,"name":"At work"},{"Locale":"Traveling","Count":31,"y":31,"name":"Traveling"},{"Locale":"Relaxing at home","Count":104,"y":104,"name":"Relaxing at home"},{"Locale":"Other","Count":7,"y":7,"name":"Other"}],"type":"column","showInLegend":false,"name":"Count","color":"#007bc4"}],"xAxis":{"type":"category","title":{"text":""}}},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"style":{"fontFamily":"Roboto"}},"title":{"align":"left","style":{"fontFamily":"Roboto Condensed","fontWeight":"bold"}},"subtitle":{"align":"left","style":{"fontFamily":"Roboto Condensed"}},"legend":{"align":"right","verticalAlign":"bottom"},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"plotOptions":{"line":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"spline":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"area":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"areaspline":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}}}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Roboto","Roboto+Condensed"],"debug":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-3e15c605ac905cc31bb2" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3e15c605ac905cc31bb2">{"x":{"hc_opts":{"title":{"text":"What is your Ideal Length of a Podcast Episode?"},"yAxis":{"title":{"text":null}},"credits":{"enabled":true,"text":"n = 155","style":{"fontSize":"12px"}},"exporting":{"enabled":false},"plotOptions":{"series":{"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25}},"annotationsOptions":{"enabledButtons":false},"tooltip":{"delayForDisplay":10},"xAxis":{"type":"category"},"series":[{"data":[{"name":"<5 min","y":3},{"name":"15 min","y":60},{"name":"30 min","y":66},{"name":"45 min","y":19},{"name":">60 min","y":7}],"type":"column","showInLegend":false,"name":"Count","color":"#007bc4"}]},"theme":{"colors":["#d35400","#2980b9","#2ecc71","#f1c40f","#2c3e50","#7f8c8d"],"chart":{"style":{"fontFamily":"Roboto"}},"title":{"align":"left","style":{"fontFamily":"Roboto Condensed","fontWeight":"bold"}},"subtitle":{"align":"left","style":{"fontFamily":"Roboto Condensed"}},"legend":{"align":"right","verticalAlign":"bottom"},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"plotOptions":{"line":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"spline":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"area":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}},"areaspline":{"marker":{"enabled":false},"states":{"hover":{"lineWidthPlus":1}}}}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Roboto","Roboto+Condensed"],"debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
